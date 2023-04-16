@@ -42,4 +42,13 @@
   .container {
     max-width: 80rem;
   }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .grid {
+    column-gap: 3.2rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1frgit);
+  }
 }
