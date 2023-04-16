@@ -1,0 +1,45 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    max-width: 100rem;
+  }
+  .hero-img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+  .grid {
+    column-gap: 4.8rem;
+  }
+  .section-seo .grid {
+    row-gap: 4.8rem;
+  }
+  .section-quote {
+    padding: 6.4rem 0;
+  }
+  .heading-secondary {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .heading-tertiary {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .paragraph {
+    font-size: 1.6rem;
+  }
+  .seo-box {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 80rem;
+  }
+}

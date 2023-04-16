@@ -45,10 +45,11 @@ a:visited {
 .container {
   width: 120rem;
   margin: 0 auto;
+  padding: 3.2rem;
 }
 
 .container--hero {
-  max-width: 85rem;
+  max-width: 90rem;
   text-align: center;
 }
 
