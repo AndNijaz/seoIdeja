@@ -33,6 +33,9 @@
   .seo-box {
     padding: 1.6rem 3.2rem;
   }
+  .operations {
+    max-width: 90rem;
+  }
 }
 
 @media (max-width: 59em) {
@@ -48,14 +51,69 @@
   .heading-primary {
     font-size: 4.4rem;
   }
-  .grid {
+  .section-about .grid {
     column-gap: 3.2rem;
+    align-items: center;
   }
+  .operations {
+    max-width: 75rem;
+    /* padding-top: 2rem; */
+  }
+  .operations__tab-container {
+    padding-top: 1.8rem;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .operations__tab {
+    width: 50%;
+    margin-right: 0;
+    transform: translateY(0%);
+  }
+  .operations__tab--active {
+    /* transform: translateX(-2%); */
+
+    transform: scale(1.1);
+    /* margin-bottom: 2rem; */
+  }
+  .operations__content {
+    padding: 1.6rem 0;
+  }
+
   .grid--3-cols {
     grid-template-columns: repeat(2, 1fr);
   }
   .about-img-box img {
     /* width: 70%; */
+  }
+
+  .mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-navigation {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .main-navigation ul {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -78,6 +136,9 @@
   .grid--2-cols {
     grid-template-columns: 1fr;
   }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
   .subheading {
     /* margin: 0 auto; */
     /* text-align: center; */
@@ -85,8 +146,11 @@
   .heading-secondary {
     text-align: center;
   }
+  .heading-tertiary {
+    /* text-align: center; */
+  }
   .paragraph {
-    text-align: center;
+    /* text-align: center; */
     max-width: 40rem;
   }
   .subheading {
@@ -96,8 +160,15 @@
   .grid {
     row-gap: 3.2rem;
   }
-  .about-text-box:nth-child(2) {
-    color: red;
-    grid-row: 1;
+  .features--img[alt="Zen stones"] {
+    /* color: red; */
+    /* height: 3rem; */
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 34em) {
+  .container {
+    max-width: 50rem;
   }
 }

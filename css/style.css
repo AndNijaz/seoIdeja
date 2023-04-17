@@ -48,9 +48,30 @@
 /* ------------------------ */
 /*  SECTION ABOUT */
 /* ------------------------ */
-.about-img-box {
-  display: flex;
-  justify-content: center;
+.section-about {
+  background-color: #f1f1f1;
+}
+
+.features--feature {
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+}
+
+.features--icon {
+  box-sizing: border-box;
+  color: #333;
+  height: 2.4rem;
+  width: 2.4rem;
+  padding: 1.4rem;
+  color: #2ba37a;
+  background-color: #c1e9db;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.features--img {
+  width: 100%;
 }
 
 .about-img-box img {
@@ -71,6 +92,117 @@
   text-transform: uppercase;
   color: white;
   font-weight: 600;
+}
+
+/* ------------------------ */
+/*  SECTION IDEJA */
+/* ------------------------ */
+.section--ideja {
+  padding: 9.6rem 0 12.8rem 0;
+}
+
+.operations {
+  max-width: 100rem;
+  box-shadow: 0 0rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  padding-top: 0rem !important;
+}
+
+.operations__tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.operations__tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.operations__tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-operations {
+  display: inline-block;
+  background-color: #30b587;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.operations__tab--1 {
+  background-color: #30b587;
+}
+
+.operations__tab--1:hover {
+  background-color: #2ba37a;
+}
+
+.operations__tab--2 {
+  background-color: #ffcb03;
+}
+
+.operations__tab--2:hover {
+  background-color: #ffcb03;
+}
+
+.operations__tab--3 {
+  background-color: #ff585f;
+  margin: 0;
+}
+
+.operations__tab--3:hover {
+  background-color: #e64f56;
+}
+
+.operations__tab--active {
+  transform: translateY(-66%);
+}
+
+.operations__content {
+  display: none;
+
+  /* JUST PRESENTATIONAL */
+  font-size: 1.7rem;
+  padding: 2.5rem 7rem 2.5rem 7rem;
+}
+
+.operations__content--active {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+}
+
+.operations__icon {
+  height: 3.6rem;
+  width: 3.6rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.operations__content p {
+  grid-column: 2;
+}
+
+.operations__icon--1 {
+  color: #30b587;
+  background-color: #d6f0e7;
+}
+.operations__icon--2 {
+  color: #ffcb03;
+  background-color: #fff5cd;
+}
+.operations__icon--3 {
+  color: #ff585f;
+  background-color: #ffdedf;
 }
 
 /* ------------------------ */
