@@ -2,14 +2,18 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  /* outline: 1px solid red; */
+  /* overflow-x: hidden; */
 }
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -43,7 +47,7 @@ a:visited {
 /* CONTAINERS */
 /* ------------------------ */
 .container {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
 }
@@ -203,7 +207,7 @@ a:visited {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  transform: translateX(0);
+  /* transform: translateX(0); */
 }
 
 .nav-open .mobile-nav--icon[name="close-outline"] {
